@@ -1,25 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./materias.css"
 export const Materias = () => {
+    const [datos, setDatos] = useState({
+          nombre: '',
+          horas: ''
+    });
+
+    const valorInpunt = (event) => {
+        //console.log(event.target.value);
+        setDatos({
+            ...datos,
+            [event.target.name]: event.target.value
+        });
+    };
+    
+    const [materias, setMaterias] = useState([{}]);
+
+    const enviarDatos = (event) => {
+        event.preventDefault();
+        const newMateria = [...materias, { nombre: datos.nombre, horas: datos.horas }];
+        setMaterias(newMateria);
+        console.log(materias);
+    };
     return (
         <>
-            <div>
-                
-            </div>
             <div className="container-fluid bg-light" id="cue">
-                <div class="row justify-content-center">
+                <div className="row justify-content-center">
                     <div className="col-7">
                         <h2 className="mb-3 mt-3 text-muted">Materias</h2>
-                        <form action="">
+                        <form onSubmit={enviarDatos}>
                             <div class="mb-3 mt-3">
-                                <label for="materia" class="form-label">Nombre de la materia:</label>
-                                <input type="text" class="form-control" id="materia" placeholder="Ej. Claculo" name="materia"/>
+                                <label for="materia" className="form-label">Nombre de la materia:</label>
+                                <input type="text" name="nombre" className="form-control" placeholder="Ej. Claculo" onChange={valorInpunt}/>
                             </div>
                             <div class="mb-3">
-                                <label for="hora" class="form-label">Cargas horarias en la semana:</label>
-                                <input type="number" class="form-control" id="hora" placeholder="Ej. 6" name="hora"/>
+                                <label for="hora" className="form-label">Cargas horarias en la semana:</label>
+                                <input type="number" name="horas" className="form-control" placeholder="Ej. 6" onChange={valorInpunt}/>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" className="btn btn-primary">Enviar</button>
                         </form>
                     </div>
                 </div>

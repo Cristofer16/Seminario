@@ -6,6 +6,7 @@ import {
     Link
   } from "react-router-dom";
 import { NavBar } from './Admin/componentes/NavBar';
+import { Ambientes } from './Admin/paginas/ambientes/Ambientes';
 import { Materias } from './Admin/paginas/materias/Materias';
 import Docentes from './Docente/paginas/Docentes';
 import verHorarios from './Docente/paginas/horarios/verHorarios';
@@ -23,6 +24,7 @@ export const RutasApp = () => {
                 <Route path="/Estudiantes" component={Estudiantes}/>
                 <Route path="/Docentes" component={Docentes}/>
                 <Route path="/verHorarios" component={verHorarios}/>
+                <Route path="/ambientes" component={Ambientes}/>
             </Switch>
         </Router>
     )
