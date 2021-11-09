@@ -5,14 +5,24 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import { NavBar } from './Admin/componentes/NavBar';
 import { Materias } from './Admin/paginas/materias/Materias';
+import Docentes from './Docente/paginas/Docentes';
+import verHorarios from './Docente/paginas/horarios/verHorarios';
+import Estudiantes from './Estudiante/paginas/Estudiantes';
+import { home } from './home';
 
 
 export const RutasApp = () => {
     return (
         <Router>
+            <NavBar/>
             <Switch>
-                <Route exact path="/materias" component={Materias}/>
+               <Route exact path="/" component={home}/>
+                <Route path="/materias" component={Materias}/>
+                <Route path="/Estudiantes" component={Estudiantes}/>
+                <Route path="/Docentes" component={Docentes}/>
+                <Route path="/verHorarios" component={verHorarios}/>
             </Switch>
         </Router>
     )
