@@ -27,19 +27,19 @@ export const Ambientes = () => {
         <>
             <div className="container-fluid bg-light" id="cue">
                 <div className="row justify-content-center">
-                    <div className="col-7">
+                    <div className="col-md-7">
                         <h2 className="mb-3 mt-3 text-muted">Registrar Ambientes</h2>
                         <form onSubmit={enviarDatos}>
-                            <div class="mb-3 mt-3">
-                                <label for="ambiente" className="form-label">Ambiente:</label>
+                            <div className="mb-3 mt-3">
+                                <label className="form-label">Ambiente:</label>
                                 <input type="text" name="ambiente" className="form-control" placeholder="Ej. Amb. 2 ó Lab. 2" onChange={valorInpunt}/>
                             </div>
-                            <div class="mb-3">
-                                <label for="piso" className="form-label">Numero de piso:</label>
+                            <div className="mb-3">
+                                <label className="form-label">Numero de piso:</label>
                                 <input type="number" name="piso" className="form-control" placeholder="Ej. 3" onChange={valorInpunt}/>
                             </div>
-                            <div class="mb-3">
-                                <label for="capacidad" className="form-label">Capacidad de estudiantes:</label>
+                            <div className="mb-3">
+                                <label className="form-label">Capacidad de estudiantes:</label>
                                 <input type="number" name="capacidad" className="form-control" placeholder="Ej. 30" onChange={valorInpunt}/>
                             </div>
                             <button type="submit" className="btn btn-primary">Enviar</button>
