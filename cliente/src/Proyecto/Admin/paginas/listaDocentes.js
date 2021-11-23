@@ -19,7 +19,7 @@ const listaDocentes = () => {
                  <tr>
                      <td>1</td>
                      <td>Ing. Jesus Lopez</td>
-                     <td><Link to="/programarMaterias"  > 
+                     <td><Link to="/asignarMaterias"  > 
                      <button className="btn btn-primary">Programar</button>
                      </Link></td>
                  </tr>

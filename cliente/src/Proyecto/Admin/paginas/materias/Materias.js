@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Crear } from "./Crear";
+import { Administrador } from "../../Administrador";
+import { CrearM } from "./CrearM";
 import "./materias.css"
-import { Tabla } from "./Tabla";
+import { TablaM } from "./TablaM";
 export const Materias = () => {
     
     const [materias, setMaterias] = useState([{
@@ -15,9 +16,10 @@ export const Materias = () => {
     };
     return (
         <>
+        <Administrador />
             <div className="container-fluid bg-light" id="cue">
-                <Crear datos={nuevosDatos} />
-                <Tabla materia={materias}/>
+                <CrearM datos={nuevosDatos} />
+                <TablaM materia={materias}/>
             </div>
         </>
     )

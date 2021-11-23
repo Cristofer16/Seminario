@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-
-export const Crear = (props) => {
+export const CrearM = (props) => {
     const [datos, setDatos] = useState({
         id: '',
         nombre: '',

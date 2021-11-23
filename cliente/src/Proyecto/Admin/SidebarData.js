@@ -8,17 +8,22 @@ export const SidebarData=  [
      },
      {
          title: 'Registrar Docente',
-         path: '/',
+         path: '/regDocente',
          cName: 'nav-text',
      },
      {
-        title: 'Ver Docentes',
-        path: '/listaDocentes',
+        title: 'Registrar Materias ',
+        path: '/Materias',
         cName: 'nav-text',
     },
     {
-        title: 'Registrar Materias',
-        path: '/',
+        title: 'Registrar Ambientes',
+        path: '/mat',
+        cName: 'nav-text',
+    },
+    {
+        title: 'Programar Materias',
+        path: '/listaDocentes',
         cName: 'nav-text',
     },
 ]

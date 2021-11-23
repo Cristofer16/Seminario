@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Tabla = (props) => {
+export const TablaM = (props) => {
     //console.log(props.materia);
     return (
         <>
