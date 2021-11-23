@@ -1,13 +1,13 @@
 import React from 'react'
-import { Administrador } from '../Administrador'
-const asignarMaterias = () => {
+import { Estudiantes } from '../Estudiantes'
+const programarMaterias = () => {
     return (
         <>
-        < Administrador />
+        < Estudiantes />
            <div className="container-fluid bg-light" id="cue">
                 <div className="row justify-content-center">
                     <div className="col-7">
-                        <h2 className="mb-3 mt-3 text-muted">Asignar Materias</h2>
+                        <h2 className="mb-3 mt-3 text-muted">Programar Materias</h2>
                         <form >
                             <div class="mb-3 mt-3">
                                 <label for="ambiente" className="form-label">Materia:</label>
@@ -27,7 +27,7 @@ const asignarMaterias = () => {
                 </div>
             </div> 
         </>
-    )
-}
-
-export default asignarMaterias
+            )
+        }
+        
+        export default programarMaterias;

@@ -1,11 +1,10 @@
 import React from "react";
-//import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-
+import { Administrador } from "../Administrador";
 const virtual = () => {
     return (
         <div className="table-responsive" align="center">
-            
+            <Administrador />
             <form id="docReg" action="" method="get" onsubmit="return valida(this)">
             
             <div className="container-fluid bg-light" id="cue">

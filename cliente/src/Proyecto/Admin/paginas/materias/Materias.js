@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./materias.css"
+
+import { Administrador } from "../../Administrador";
 export const Materias = () => {
     const [datos, setDatos] = useState({
           nombre: '',
@@ -7,7 +8,7 @@ export const Materias = () => {
     });
 
     const valorInpunt = (event) => {
-        //console.log(event.target.value);
+        //console.log(event.starget.value);
         setDatos({
             ...datos,
             [event.target.name]: event.target.value
@@ -24,6 +25,7 @@ export const Materias = () => {
     };
     return (
         <>
+        < Administrador />
             <div className="container-fluid bg-light" id="cue">
                 <div className="row justify-content-center">
                     <div className="col-7">

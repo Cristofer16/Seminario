@@ -1,5 +1,6 @@
 import React, { useState }from 'react'
 import "./ambientes.css";
+import { Administrador } from '../Administrador';
 export const Ambientes = () => {
     const [datos, setDatos] = useState({
         ambiente: '',
@@ -25,6 +26,7 @@ export const Ambientes = () => {
     };
     return (
         <>
+        <Administrador />
             <div className="container-fluid bg-light" id="cue">
                 <div className="row justify-content-center">
                     <div className="col-md-7">

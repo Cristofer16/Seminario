@@ -7,7 +7,6 @@ import {
 import { Administrador } from './Admin/Administrador';
 import { Ambientes } from './Admin/ambientes/Ambientes';
 import listaDocentes from './Admin/paginas/listaDocentes';
-import programarMaterias from './Admin/paginas/programarMaterias';
 import { Docentes } from './Docentes/Docentes';
 import verHorarios from './Docentes/paginas/verHorarios';
 import { Estudiantes } from './Estudiantes/Estudiantes';
@@ -16,6 +15,12 @@ import { home } from './home';
 
 import virtual from './Admin/ambientes/virtual';
 import regDocente from './Admin/paginas/regDocentes/regDocente';
+import asignarMaterias from './Admin/paginas/programarMaterias';
+import programarMaterias from './Estudiantes/paginas/programarMaterias';
+import Horarios from './Estudiantes/paginas/Horarios';
+import { Materias } from './Admin/paginas/materias/Materias';
+import { Crear } from './Admin/paginas/materias/Crear';
+import mat from './Admin/ambientes/mat';
 
 
 
@@ -33,10 +38,15 @@ export const RutasApp = () => {
                 <Route path="/Administrador" component={Administrador}/>
                 <Route path="/verHorarios" component={verHorarios}/>
                 <Route path="/Ambientes" component={Ambientes}/>
-                <Route path="/programarMaterias" component={programarMaterias}/>
+                <Route path="/asignarMaterias" component={asignarMaterias}/>
                 <Route path="/listaDocentes" component={listaDocentes}/>
                 <Route path="/virtual" component={virtual}/>
                 <Route path="/regDocente" component={regDocente}/>
+                <Route path="/programarMaterias" component={programarMaterias}/>
+                <Route path="/Horarios" component={Horarios}/>
+                <Route path="/Materias" component={Materias}/>
+                <Route path="/crear" component={Crear}/>
+                <Route path="/mat" component={mat}/>
             </Switch>
         </Router>
     )

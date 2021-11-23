@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { Administrador } from '../../Administrador';
 export const Crear = () => {
     const [datos, setDatos] = useState({
         nombre: '',
@@ -24,6 +24,7 @@ export const Crear = () => {
     };
     return (
         <>
+        < Administrador />
             <div className="row justify-content-center">
                 <div className="col-7">
                     <h2 className="mb-3 mt-3 text-muted">Materias</h2>

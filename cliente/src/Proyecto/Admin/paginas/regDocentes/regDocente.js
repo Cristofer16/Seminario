@@ -1,10 +1,9 @@
 import React from "react";
-//import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Administrador } from "../../Administrador";
 const regDocente = () => {
     return (
         <div className="table-responsive"  align="center" >          
-
+          < Administrador />
             <form onsubmit="return valida(this)">
            
                 <div className="container-fluid bg-light" id="cue">
