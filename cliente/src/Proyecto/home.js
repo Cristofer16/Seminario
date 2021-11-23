@@ -6,8 +6,7 @@ export const home = () =>{
         <div>
             <div className="navbar">
             </div>
-            <img className="img" src={horario} />  
+            <img className="img" src={horario} />
         </div>
     )
 }
-

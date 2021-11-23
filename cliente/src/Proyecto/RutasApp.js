@@ -11,11 +11,12 @@ import programarMaterias from './Admin/paginas/programarMaterias';
 import { Docentes } from './Docentes/Docentes';
 import verHorarios from './Docentes/paginas/verHorarios';
 import { Estudiantes } from './Estudiantes/Estudiantes';
-
 import { home } from './home';
-
 import virtual from './Admin/ambientes/virtual';
 import regDocente from './Admin/paginas/regDocentes/regDocente';
+import { Materias } from './Admin/paginas/materias/Materias';
+import { login } from './login';
+import { registar } from './registar';
 
 
 
@@ -37,6 +38,9 @@ export const RutasApp = () => {
                 <Route path="/listaDocentes" component={listaDocentes}/>
                 <Route path="/virtual" component={virtual}/>
                 <Route path="/regDocente" component={regDocente}/>
+                <Route path="/Materias" component={Materias}/>
+                <Route path="/login" component={login}/>
+                <Route path="/registrar" component={registar}/>
             </Switch>
         </Router>
     )
