@@ -2,23 +2,23 @@ import React from 'react'
 
 export const SidebarData=  [
      {
-        title: 'home',
+        title: 'Home ',
         path: '/',
         cName: 'nav-text',
      },
      {
-         title: 'Estudiantes',
-         path: '/Estudiantes',
+         title: 'Registrar Docente',
+         path: '/',
          cName: 'nav-text',
      },
      {
-        title: 'Docentes',
-        path: '/Docentes',
+        title: 'Ver Docentes',
+        path: '/listaDocentes',
         cName: 'nav-text',
     },
     {
-        title: 'Materias',
-        path: '/Materias',
+        title: 'Registrar Materias',
+        path: '/',
         cName: 'nav-text',
     },
 ]

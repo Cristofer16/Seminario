@@ -1,9 +1,10 @@
 import React from 'react'
-//import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-
+import { Docentes } from '../Docentes';
 const verHorarios = () => {
     return (
+        <div>
+            < Docentes />
         <div className="table-responsive">
             <h1 className="text-dark text-center">Horario</h1>
             <table className="table table-bordered table-hover">
@@ -40,6 +41,7 @@ const verHorarios = () => {
             <button className="btn btn-primary">Salir</button>
             </Link>
              <button type="submit" className="btn btn-primary" >imprimir</button>    
+             </div>
              </div>
     )
 }

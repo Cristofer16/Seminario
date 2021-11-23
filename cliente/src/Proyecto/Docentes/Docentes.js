@@ -8,13 +8,12 @@ import "./NavBar.css";
 //import SubMenu from "./SubMenu";
 
 
-export const NavBar = () =>{
+export const Docentes = () =>{
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
     return (
     <>
-    <h3>Sistema de Gestion de Horarios</h3>
         <IconContext.Provider value={{color: '#fff'}}>
        <div className="navbar">
          <Link to="#" className="menu-bars">
@@ -40,7 +39,7 @@ export const NavBar = () =>{
             })}
         </nav>
       </nav>
-      </IconContext.Provider>  
-    </> 
+      </IconContext.Provider> 
+      </> 
       )
 }
