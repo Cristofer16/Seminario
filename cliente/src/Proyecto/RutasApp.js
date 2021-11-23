@@ -14,6 +14,10 @@ import { Estudiantes } from './Estudiantes/Estudiantes';
 
 import { home } from './home';
 
+import virtual from './Admin/ambientes/virtual';
+import regDocente from './Admin/paginas/regDocentes/regDocente';
+
+
 
 export const RutasApp = () => {
     return (
@@ -31,6 +35,8 @@ export const RutasApp = () => {
                 <Route path="/Ambientes" component={Ambientes}/>
                 <Route path="/programarMaterias" component={programarMaterias}/>
                 <Route path="/listaDocentes" component={listaDocentes}/>
+                <Route path="/virtual" component={virtual}/>
+                <Route path="/regDocente" component={regDocente}/>
             </Switch>
         </Router>
     )
