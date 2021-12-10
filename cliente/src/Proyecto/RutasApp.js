@@ -26,7 +26,7 @@ import mat from './Admin/ambientes/mat';
 export const RutasApp = () => {
     return (
         <Router>
-            <h3>Sistema de Gestion de Horarios </h3>
+            <h3 >Sistema de Gestion de Horarios </h3>
             
               <div className="navbar-z">
                 </div>
