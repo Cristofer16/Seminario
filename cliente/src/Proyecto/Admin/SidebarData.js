@@ -22,7 +22,7 @@ export const SidebarData=  [
         cName: 'nav-text',
     },
     {
-        title: 'Programar Materias',
+        title: 'Asignar Materias',
         path: '/listaDocentes',
         cName: 'nav-text',
     },

@@ -7,7 +7,7 @@ export const SidebarData=  [
          cName: 'nav-text',
      },
      {
-        title: 'Ver Programacion',
+        title: 'Ver mi Programacion',
         path: '/verProgramacion',
         cName: 'nav-text',
     },

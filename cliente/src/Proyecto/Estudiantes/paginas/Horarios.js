@@ -1,5 +1,6 @@
 import React from 'react'
 import { Estudiantes } from '../Estudiantes';
+import "../NavBar.css"
 const Horarios = () => {
     return (
         <div>
@@ -36,7 +37,9 @@ const Horarios = () => {
                  </tr>
              </tbody>
             </table>
+            <div className='buton'>
              <button type="submit" className="btn btn-primary" >imprimir</button>    
+             </div>
              </div>
              </div>
     )

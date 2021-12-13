@@ -17,10 +17,6 @@
   justify-content: center;
   font-size: 3rem;
 }
-.img {
-  width: 100%;
-  height: 500px;
-}
 .table{
   position: relative;
   padding: 10px;
@@ -32,5 +28,21 @@ table tbody tr th {
 }
 table tbody tr td {
   padding: 10px;
+}
+.image{
+  background-image: url("img/horario.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(84, 135, 212);
+}
+.formu {
+  padding: 30px;
+  margin-right: 100px;
+}
+.line {
+  padding: 30px;
+  width: 100%;
 }
   

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import { Docentes } from '../Docentes';
+import "../NavBar.css"
 const verHorarios = () => {
     return (
         <div>
@@ -37,10 +37,9 @@ const verHorarios = () => {
                  </tr>
              </tbody>
             </table>
-            <Link to="/Docentes"  > 
-            <button className="btn btn-primary">Salir</button>
-            </Link>
+            <div className='buton'>
              <button type="submit" className="btn btn-primary" >imprimir</button>    
+             </div>
              </div>
              </div>
     )
