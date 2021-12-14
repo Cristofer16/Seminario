@@ -26,5 +26,10 @@ export const SidebarData=  [
         path: '/listaDocentes',
         cName: 'nav-text',
     },
+    {
+        title: 'Asignar Ambientes',
+        path: '/asignarAmbientes',
+        cName: 'nav-text',
+    },
 ]
 export default SidebarData;

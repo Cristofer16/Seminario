@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TablaE = (props) => {
+export const TablaAmbiente = (props) => {
     //console.log(props.materia);
     return (
         <>
@@ -10,19 +10,21 @@ export const TablaE = (props) => {
                         <tr>
                             {/*<th>No</th>*/}
                             <th>Sigla</th>
-                            <th>Materia</th>
-                            <th>Grupo</th>
-                            <th>Accion</th>
+                            <th>Ambiente</th>
+                            <th>Dia</th>
+                            <th>Horas Academicas</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         {props.materia.map((mat) => (
                             <tr key={mat.id}>
                                 <td>{mat.sigla}</td>
-                                <td>{mat.materia}</td>
-                                <td>{mat.grupo}</td>
+                                <td>{mat.ambiente}</td>
+                                <td>{mat.dias}</td>
+                                <td>{mat.horas}</td>
                                 <td> 
-                                    <button className="btn btn-primary">Desprogramar</button>
+                                    <button className="btn btn-primary">Eliminar</button>
                                 </td>
                             </tr>
                         ))}

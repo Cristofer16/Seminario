@@ -20,8 +20,8 @@ import VerProgramacion from './Estudiantes/paginas/VerProgramacion';
 import Quejas from './Docentes/paginas/Quejas';
 import { Registro } from './Admin/paginas/regDocentes/registroDocente';
 import AsignarPrograma from './Admin/paginas/asignar/listaDocentes';
-
-
+import { Asignar } from './Admin/paginas/asignar/asignarMaterias';
+import { AmbienteASIG } from './Admin/paginas/asignarAmbientes/asignarAmbiente';
 
 
 export const RutasApp = () => {
@@ -32,7 +32,7 @@ export const RutasApp = () => {
               <div className="navbar-z">
                 </div>
             <Switch>
-               <Route exact path="/login" component={home}/>
+               <Route exact path="/" component={home}/>
                 <Route path="/Estudiantes" component={Estudiantes}/>
                 <Route path="/Docentes" component={Docentes}/>
                 <Route path="/Administrador" component={Administrador}/>
@@ -49,6 +49,8 @@ export const RutasApp = () => {
                 <Route path="/mat" component={mat}/>
                 <Route path="/verProgramacion" component={VerProgramacion}/>
                 <Route path="/Quejas" component={Quejas}/>
+                <Route path="/asignarMaterias" component={Asignar}/>
+                <Route path="/asignarAmbientes" component={AmbienteASIG}/>
             </Switch>
         </Router>
     )
