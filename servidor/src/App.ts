@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import mongoose, { mongo, Mongoose } from "mongoose";
 
 import UserModule from "./modules/usermodule/init";
+import MateriaModule from "./modules/materiamodule/init";
 
 if (process.env.NODE_ENV == "development") {
     dotenv.config();
@@ -46,6 +47,7 @@ class App {
     private startModules() {
         console.log("Modulos cargados");
         new UserModule(`/${this.apiversion}/user`, this);
+        new MateriaModule(`/${this.apiversion}/materia`, this);
     }
     public getApp(): Express {
         return this.app;
