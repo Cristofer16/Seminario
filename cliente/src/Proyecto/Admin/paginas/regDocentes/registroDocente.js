@@ -9,7 +9,7 @@ export const Registro = () => {
         id: Date(),apellidos: 'Lopez Quentasi', nombres: 'Jesus', horas: '24hrs'
     }]);
 
-    const nuevosDatos = (apellidos,nombres, horas) => {
+    const nuevosDatos = (apellidos,nombres,horas) => {
         const newRegistro = [...registro, { id: Date(),apellidos: apellidos, nombres: nombres, horas: horas}];
         setRegistro(newRegistro);
         //console.log(materias);

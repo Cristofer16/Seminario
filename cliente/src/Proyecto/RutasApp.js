@@ -10,7 +10,7 @@ import { Docentes } from './Docentes/Docentes';
 import verHorarios from './Docentes/paginas/verHorarios';
 import { Estudiantes } from './Estudiantes/Estudiantes';
 import { home } from './home';
-import virtual from './Admin/ambientes/virtual';
+import { Virtual } from './Admin/ambientes/virtual/virtual';
 import { registar } from './registar';
 import Horarios from './Estudiantes/paginas/Horarios';
 import { Materias } from './Admin/paginas/materias/Materias';
@@ -39,7 +39,7 @@ export const RutasApp = () => {
                 <Route path="/verHorarios" component={verHorarios}/>
                 <Route path="/Ambientes" component={Ambientes}/>
                 <Route path="/listaDocentes" component={AsignarPrograma}/>
-                <Route path="/virtual" component={virtual}/>
+                <Route path="/virtual" component={Virtual}/>
                 <Route path="/regDocente" component={Registro}/>
                 <Route path="/Materias" component={Materias}/>
                 <Route path="/registrar" component={registar}/>

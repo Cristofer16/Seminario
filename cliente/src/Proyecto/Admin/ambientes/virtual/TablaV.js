@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-export const TablaA = (props) => {
+export const TablaV = (props) => {
     //console.log(props.);
     return (
         <>
@@ -9,18 +9,18 @@ export const TablaA = (props) => {
                     <thead className="table-primary">
                         <tr>
                             {/*<th>No</th>*/}
-                            <th>Ambiente</th>
-                            <th>Piso</th>
-                            <th>Capacidad</th>
+                            <th>Codigo Sala Virtual</th>
+                            <th>Fecha de Clase</th>
+                            <th>Hora</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {props.ambiente.map((mat) => (
-                            <tr key={mat.id}>
-                                <td>{mat.ambiente}</td>
-                                <td>{mat.piso}</td>
-                                <td>{mat.capacidad}</td>
+                        {props.registro.map((reg) => (
+                            <tr key={reg.id}>
+                                <td>{reg.salVirtual}</td>
+                                <td>{reg.fechClass}</td>
+                                <td>{reg.hora}</td>
                                 <td> 
                                     <button className="btn btn-primary">Actualizar</button>
                                     {" "}
@@ -31,6 +31,6 @@ export const TablaA = (props) => {
                     </tbody>
                 </table>
             </div>
-        </>
+        </>    
     )
 }

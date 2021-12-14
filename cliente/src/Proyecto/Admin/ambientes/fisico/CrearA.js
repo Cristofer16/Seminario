@@ -34,7 +34,8 @@ export const CrearA = (props) => {
                             <input type="number" name="piso" className="form-control" placeholder="Ej. 3" onChange={valorInpunt}/>
                         </div>
                         <div className="mb-3">
-                            <label className="form-label">Capacidad de estudiantes:</label>                                <input type="number" name="capacidad" className="form-control" placeholder="Ej. 30" onChange={valorInpunt}/>
+                            <label className="form-label">Capacidad de estudiantes:</label>                   
+                            <input type="number" name="capacidad" className="form-control" placeholder="Ej. 30" onChange={valorInpunt}/>
                         </div>
                         <button type="submit" className="btn btn-primary mb-5 mt-3">Enviar</button>
                     </form>
