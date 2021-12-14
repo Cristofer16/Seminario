@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TablaE = (props) => {
+export const TablaA = (props) => {
     //console.log(props.materia);
     return (
         <>
@@ -12,7 +12,7 @@ export const TablaE = (props) => {
                             <th>Sigla</th>
                             <th>Materia</th>
                             <th>Grupo</th>
-                            <th>Accion</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -22,7 +22,9 @@ export const TablaE = (props) => {
                                 <td>{mat.materia}</td>
                                 <td>{mat.grupo}</td>
                                 <td> 
-                                    <button className="btn btn-primary">Desprogramar</button>
+                                    <button className="btn btn-primary">Actualizar</button>
+                                    {" "}
+                                    <button className="btn btn-primary">Eliminar</button>
                                 </td>
                             </tr>
                         ))}

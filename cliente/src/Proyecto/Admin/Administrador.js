@@ -37,7 +37,8 @@ export const Administrador = () =>{
             })}
         </nav>
       </nav>
-      </IconContext.Provider>  
+      </IconContext.Provider>
+      <h1 className="estudio">ADMINISTRADOR</h1>  
     </> 
       )
 }

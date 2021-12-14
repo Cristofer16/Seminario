@@ -43,9 +43,6 @@ const VerProgramacion = () => {
                  </tr>
              </tbody>
             </table>
-            <div className='buton'>
-             <button type="submit" className="btn btn-primary mt-3" >Imprimir Programacion</button>    
-             </div>
              </div>
              </div>
     )

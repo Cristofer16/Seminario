@@ -40,6 +40,7 @@ export const Docentes = () =>{
         </nav>
       </nav>
       </IconContext.Provider> 
+      <h1 className="estudio">DOCENTES</h1>
       </> 
       )
 }

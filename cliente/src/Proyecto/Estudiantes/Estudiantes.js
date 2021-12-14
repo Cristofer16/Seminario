@@ -13,9 +13,10 @@ export const Estudiantes = () =>{
 
   const showSidebar = () => setSidebar(!sidebar);
     return (
+      
     <>
-    
         <IconContext.Provider value={{color: '#fff'}}>
+      
        <div className=" navbar">
          <Link to="#"  className="menu-bars">
            <FaIcons.FaBars onClick={showSidebar} />
@@ -42,5 +43,6 @@ export const Estudiantes = () =>{
       </nav>
       </IconContext.Provider>  
     </> 
+    
       )
 }
